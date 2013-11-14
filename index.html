@@ -2,38 +2,69 @@
 <meta charset="utf-8">
  <title>Visualizing Unemployment</title>
  <link href="css/tipsy.css" rel="stylesheet" type="text/css" />
+   <!-- Google Fonts embed code -->
+        <script type="text/javascript">
+            (function() {
+                var link_element = document.createElement("link"),
+                    s = document.getElementsByTagName("script")[0];
+                if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
+                    link_element.href = "http:";
+                }
+                link_element.href += "//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800";
+                link_element.rel = "stylesheet";
+                link_element.type = "text/css";
+                s.parentNode.insertBefore(link_element, s);
+            })();
+        </script>
+
 <style>
 
+h1{
+   font-family: "Open Sans", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   font-size: 52px;
+   letter-spacing: -3px;
+}
+
+h2.intro{
+   font-family: "Open Sans";
+   font-weight: 400;
+   font-style: normal;
+   font-size: 30px;
+   letter-spacing: -2px;
+}
+
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.4em;
+  letter-spacing: 0px;
   padding: 0;
   margin: 0;
 }
 
-h1 {
-  font-size: 220%;
-  margin-top: 25px;
-      }
-
 #colorselect {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.4em;
   padding: 0;
   margin-left: 100px;
   width: 500px;
 }
 
-form, form > * {
-    margin: 0;
-}
-
 form {
-   font-size: 120%;
+   font-size: 20px;
+   font-weight:300;
+   font-style: normal;
+   font-family: "Open Sans", sans-serif;
+}
+label{
+  letter-spacing: -1px;
 }
 b{
   font-size: 18px;
@@ -79,16 +110,17 @@ b{
 
 
 </style>
-<h1>U.S. Unemployment Rates</h1><br>
+<h1>Visualizing U.S. Unemployment</h1>
+<h2 class="intro"> Compare rates of unemployment across the nation.</h2>
 <div id ="colorselect">
-<form><label>Select a color theme: <select id="colorScheme">
+<form><label>Select a color theme: </label><select id="colorScheme">
               <option selected="selected" value="GrYlRd">Green Yellow Red</option>
               <option value="YlGnBu">Yellow Green Blue</option>
               <option value="YlGn">Yellow Green </option>
               <option value="Oranges">Oranges</option>
               <option value="Purples">Purples</option>
               <option value="Reds">Reds</option>
-            </select></label>
+            </select>
 </form></div>
 <br>
 <body> 
