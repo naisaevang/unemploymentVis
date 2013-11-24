@@ -96,7 +96,7 @@ function ready(error, us, unemployment) {
   var rateByState = {};
 
 
-  unemployment.forEach(function(d) { rateByState[d.state] = +d.rate; });
+  unemployment.forEach(function(d) { rateByState[d.State] = +d.UEROct13p; });
 
   g.append("g")
       .attr("id", "states")

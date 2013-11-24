@@ -35,6 +35,15 @@ h2.intro{
    letter-spacing: -2px;
 }
 
+.about{
+   font-family: "Open Sans", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   font-size: 30px;
+   letter-spacing: -1px;
+   line-height: 50px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -55,6 +64,15 @@ body {
   padding: 0;
   margin-left: 100px;
   width: 500px;
+}
+
+#about {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  line-height: 1.4em;
+  padding: 0;
+  margin-left: 300px;
+  width: 800px;
 }
 
 form {
@@ -131,6 +149,11 @@ b{
 <script src="js/jquery.tipsy.js"></script>
 <script src="js/colorbrewer.js"></script>
 <script src="js/unemployment-vis.js"></script>
-<br><br>
+<br><div id="about">
+<span class="about">About</span><br>
+Data from United States <a href="http://www.bls.gov/">Bureau of Labor Statistics</a>.  Current release: October 2013 preliminary.<br>
+
+Designed and built with <a href="http://d3js.org/">D3.js</a>; colors by <a href="http://colorbrewer2.org/">colorbrewer</a>.
+<br><br><br><br>
 </body>
 
