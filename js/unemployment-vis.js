@@ -2,15 +2,9 @@ var width = 960,
     height = 500,
     centered;
 
-var color_domain = [4, 5, 6, 7, 8]
-var ext_color_domain = [0, 4, 5, 6, 7, 8]
-var legend_labels = ["< 4%", ">= 4%", ">= 5%", ">= 6%", ">= 7%", "> 8%"]
+var color_domain, ext_color_domain, legend_labels;
 var colors = {};
-var colorSelected, color;
-
-var div = d3.select("body").append("div")   
-    .attr("class", "tooltip")               
-    .style("opacity", 0);
+var colorSelected, color, dataSelected, zdata;
 
 var projection = d3.geo.albersUsa()
     .scale(1070)
@@ -35,6 +29,7 @@ var g = svg.append("g");
 function init(){
 
 colorSelected = getChosenColors();
+dataSelected = getChosenData();
 
 if (colorSelected == "GrYlRd")
 {
@@ -61,10 +56,32 @@ else if(colorSelected == "Reds")
     colors = colorbrewer.Reds[6];
 }
 
+if(dataSelected == "current")
+{
+  zdata = "currentmonth";  
+  color_domain = [4, 5, 6, 7, 8];
+  ext_color_domain = [0, 4, 5, 6, 7, 8];
+  legend_labels = ["< 4%", "≥ 4%", "≥ 5%", "≥ 6%", "≥ 7%", "> 8%"];
+
+}
+else if(dataSelected == "yearChange")
+{
+  zdata = "year";
+  color_domain = [-1.5, -1, 0, 1, 1.5];
+  ext_color_domain = [-2, -1.5, -1, 0, 1, 1.5];
+  legend_labels = ["< -1.5%", "≤ -1.5%", "≤ -1%", "≥ 0%", "≥ 1%", "> 1.5%"];
+}
+else if(dataSelected == "monthChange")
+{
+  zdata = "month";
+  color_domain = [-1, -.5, 0, .5, 1];
+  ext_color_domain = [-1.5, -1, -.5, 0, .5, 1];
+  legend_labels = ["< -1%", "≤ -1%", "≤ -.5%", "≥ 0%", "≥ .5%", "> 1%"];
+}
+
 color = d3.scale.threshold()
       .domain(color_domain)
       .range(colors);
-
 queue()
       .defer(d3.json, "data/us-named.json")
       .defer(d3.tsv, "data/unemployment.tsv")
@@ -93,10 +110,13 @@ legend.append("rect")
 
 function ready(error, us, unemployment) {
 
-  var rateByState = {};
+  var rateByState = {}, yearChange = {}, monthChange = {};
 
 
-  unemployment.forEach(function(d) { rateByState[d.State] = +d.UEROct13p; });
+  unemployment.forEach(function(d) { 
+    rateByState[d.State] = +d.UEROct13p; 
+    yearChange[d.State]= +d.YearChange; 
+    monthChange[d.State]= +d.MonthChange; });
 
   g.append("g")
       .attr("id", "states")
@@ -105,7 +125,13 @@ function ready(error, us, unemployment) {
     .enter().append("path")
       .attr("d", path)
       .style("fill", function(d) { 
-          return color(rateByState[d.properties.name]); })
+        if(zdata =="currentmonth")
+          return color(rateByState[d.properties.name]); 
+        else if(zdata == "year"){
+          return color(yearChange[d.properties.name]); }
+        else if(zdata == "month"){
+          return color(monthChange[d.properties.name]); }
+        })
       .style("opacity", 0.8)
       //Adding mouseevents
     .on("mouseover", function(d) {
@@ -127,8 +153,26 @@ function ready(error, us, unemployment) {
     gravity: 'sw',
     html: true,
     title: function() {
-    var d = this.__data__, sN = d.properties.name, uR = rateByState[d.properties.name];
-    return '<b>' + sN + '</b><br> <span class="rating">' + uR + '%</span><br>Unemployment Rate ';
+    var d = this.__data__, sN = d.properties.name, uR = rateByState[d.properties.name], yR = yearChange[d.properties.name], mR = monthChange[d.properties.name];
+    if(zdata == "currentmonth"){
+      return '<b>' + sN + '</b><br> <span class="rating">' + uR + '%</span><br>Unemployment Rate'; }
+    else if(zdata == "year"){ 
+      if(yR > 0)
+        return '<b>' + sN + '</b><br> <span class="negative">+' + yR + '%</span><br>increase';
+      else if(yR < 0)
+        return '<b>' + sN + '</b><br> <span class="positive">' + yR + '%</span><br>decrease';
+      else
+        return '<b>' + sN + '</b><br> <span class="rating">' + yR + '%</span><br>change';
+      }
+    else if(zdata == "month"){
+      if(mR > 0)
+        return '<b>' + sN + '</b><br> <span class="negative">+' + mR + '%</span><br>increase';
+      else if(mR < 0)
+        return '<b>' + sN + '</b><br> <span class="positive">' + mR + '%</span><br>decrease';
+      else
+        return '<b>' + sN + '</b><br> <span class="rating">' + mR + '%</span><br>change';
+
+      }
     }
   });
 
@@ -188,6 +232,11 @@ function getChosenColors() {
   return select.options[select.selectedIndex].value;
 }
 
+function getChosenData() {
+  var select = document.getElementById("dataselect");
+  return select.options[select.selectedIndex].value;
+}
+
 function update() {
   svg.selectAll("g.legend")
     .remove();
@@ -201,3 +250,4 @@ function update() {
 
 
 document.getElementById("colorScheme").addEventListener ("change", update, false);
+document.getElementById("dataselect").addEventListener ("change", update, false);

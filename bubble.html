@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+ <title>Visualizing Unemployment</title>
+ <!-- Stylesheets -->
+ <link href="css/style.css" rel="stylesheet" type="text/css" />
+ <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+ <link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
+
+   <!-- Google Fonts embed code -->
+        <script type="text/javascript">
+            (function() {
+                var link_element = document.createElement("link"),
+                    s = document.getElementsByTagName("script")[0];
+                if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
+                    link_element.href = "http:";
+                }
+                link_element.href += "//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800";
+                link_element.rel = "stylesheet";
+                link_element.type = "text/css";
+                s.parentNode.insertBefore(link_element, s);
+            })();
+        </script>
+
+<h1>Visualizing U.S. Unemployment</h1>
+<!-- Bootstrap navigation -->
+<div id="navigation">
+    <ul class="nav nav-pills">
+  <li><a href="index.html">Map</a></li>
+  <li><a href="linegraph.html">Line Graph</a></li>
+  <li class="active"><a href="bubble.html">Bubble Chart</a></li>
+</ul></div>
+<body> 
+  <div id="container" class="container">
+<script src="vendor/d3.min.js"></script>
+<script src="vendor/d3.v3.js"></script>
+<script src="vendor/d3.layout.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js"></script>
+<script defer src="js/plugins.js"></script>
+<script defer src="js/script.js"></script>
+<script src="js/CustomTooltip.js"></script>
+<script src="js/bubblechart.js"></script>
+<script src="js/bubble.js"></script>
+<div id="view_selection" class="btn-group">
+        <a href="#" id="all" class="btn active">All data</a>
+        <a href="#" id="year" class="btn">Group by Year-Month</a>
+      </div><p align="left">Size of bubble indicates civilian labor force.  Color indicates rates of unemployment. Hover for more details.<br>
+      <img src="img/lightgreen.png"></img> < 3.5% 
+      <img src="img/greener.png"></img> > 3.5% 
+      <img src="img/lightorange.png"></img> > 5% 
+      <img src="img/oranger.png"></img> ≥ 6.5% 
+      <img src="img/redder.png"></img> ≥ 8.4% <br></p>
+  <div id="vis">
+  </div>
+<br>
+ </div> <!--! end of #container -->
+ <div id="about">
+<span class="about">About</span><br>
+Data from United States <a href="http://www.bls.gov/">Bureau of Labor Statistics</a>.  Current release: October 2013 preliminary.<br>
+Designed and built with <a href="http://d3js.org/">D3.js</a>; colors by <a href="http://colorbrewer2.org/">colorbrewer</a>. 
+Interactive Line graph utilizes <a href="http://code.shutterstock.com/rickshaw/">Rickshaw</a> toolkit.<br>
+Animated Bubble Chart modified from <a href="http://vallandingham.me/bubble_charts_in_d3.html">Jim Vallandingham</a>.
+Navigation and buttons from <a href="getbootstrap.com">Bootstrap.css</a>.
+<br><br><br><br>
+</body>
+

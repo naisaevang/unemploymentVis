@@ -1,0 +1,205 @@
+state,id,labor_force,year_month,rate,unemployed
+Alabama,1,2154.8,12-Oct,7.1,153
+Alaska,2,366.1,12-Oct,6.8,25
+Arizona,3,3028,12-Oct,8.1,245.7
+Arkansas,4,1348.7,12-Oct,7.2,97.4
+California,5,18517.6,12-Oct,10.1,1861.6
+Colorado,6,2743.7,12-Oct,7.7,212.1
+Connecticut,7,1873.5,12-Oct,8.4,157.6
+Delaware,8,445.2,12-Oct,7.1,31.6
+District of Columbia,9,367.8,12-Oct,8.6,31.8
+Florida,10,9395,12-Oct,8.2,769.4
+Georgia,11,4817.2,12-Oct,8.8,424.9
+Hawaii,12,651.1,12-Oct,5.4,35.1
+Idaho,13,773.7,12-Oct,6.6,51.4
+Illinois,14,6603.7,12-Oct,8.8,579.1
+Indiana,15,3146.2,12-Oct,8.4,265.4
+Iowa,16,1630.3,12-Oct,5.1,82.6
+Kansas,17,1486.9,12-Oct,5.6,82.7
+Kentucky,18,2082.8,12-Oct,8.1,169.6
+Louisiana,19,2082.9,12-Oct,5.9,123.4
+Maine,20,706.1,12-Oct,7.2,51.1
+Maryland,21,3134.6,12-Oct,6.8,213.2
+Massachusetts,22,3477.1,12-Oct,6.7,234.2
+Michigan,23,4645.9,12-Oct,9.1,421.9
+Minnesota,24,2971.5,12-Oct,5.6,165
+Mississippi,25,1336,12-Oct,9.1,121.2
+Missouri,26,2991.1,12-Oct,6.7,201.7
+Montana,27,509.6,12-Oct,5.8,29.7
+Nebraska,28,1025.4,12-Oct,3.9,39.7
+Nevada,29,1372.9,12-Oct,10.3,141.7
+New Hampshire,30,743.5,12-Oct,5.7,42.2
+New Jersey,31,4619.6,12-Oct,9.6,443.1
+New Mexico,32,937.1,12-Oct,6.8,63.3
+New York,33,9587.4,12-Oct,8.4,801.8
+North Carolina,34,4743.3,12-Oct,9.4,447.6
+North Dakota,35,394.4,12-Oct,3.2,12.6
+Ohio,36,5729.7,12-Oct,6.9,396
+Oklahoma,37,1810.9,12-Oct,5.2,94.6
+Oregon,38,1956.8,12-Oct,8.5,166.7
+Pennsylvania,39,6517.3,12-Oct,8,524.6
+Rhode Island,40,562.4,12-Oct,10.1,56.8
+South Carolina,41,2166.1,12-Oct,8.8,189.6
+South Dakota,42,446.1,12-Oct,4.4,19.5
+Tennessee,43,3116.6,12-Oct,7.8,244
+Texas,44,12619.6,12-Oct,6.4,810.6
+Utah,45,1356.7,12-Oct,5.5,74.6
+Vermont,46,356.2,12-Oct,5,18
+Virginia,47,4212.6,12-Oct,5.8,242.6
+Washington,48,3472.2,12-Oct,7.8,270.9
+West Virginia,49,807.3,12-Oct,7.5,60.7
+Wisconsin,50,3046.5,12-Oct,6.8,207.7
+Wyoming,51,306.1,12-Oct,5.1,15.6
+Alabama,52,2149.2,13-Aug,6.2,134.3
+Alaska,53,363.2,13-Aug,6.5,23.6
+Arizona,54,3004.3,13-Aug,8.3,248.2
+Arkansas,55,1323.1,13-Aug,7.4,98.5
+California,56,18580.9,13-Aug,8.9,1646.2
+Colorado,57,2765.1,13-Aug,7,194
+Connecticut,58,1851.7,13-Aug,8.1,150.2
+Delaware,59,440.1,13-Aug,7.3,32.1
+District of Columbia,60,364.7,13-Aug,8.7,31.7
+Florida,61,9394.1,13-Aug,7,658.3
+Georgia,62,4796.6,13-Aug,8.7,416.7
+Hawaii,63,642.5,13-Aug,4.3,27.8
+Idaho,64,773.1,13-Aug,6.8,52.2
+Illinois,65,6525.5,13-Aug,9.2,601.8
+Indiana,66,3155.1,13-Aug,8.1,256.8
+Iowa,67,1654.8,13-Aug,4.9,80.6
+Kansas,68,1487.2,13-Aug,5.9,87.7
+Kentucky,69,2078.3,13-Aug,8.4,174.9
+Louisiana,70,2086.1,13-Aug,7,146
+Maine,71,709,13-Aug,7,49.9
+Maryland,72,3115,13-Aug,7,218.5
+Massachusetts,73,3491.9,13-Aug,7.2,252.5
+Michigan,74,4727.1,13-Aug,9,424.7
+Minnesota,75,2970.5,13-Aug,5.1,152.5
+Mississippi,76,1291.3,13-Aug,8.5,110.2
+Missouri,77,3010.5,13-Aug,7.2,216.7
+Montana,78,507.9,13-Aug,5.3,27
+Nebraska,79,1033.8,13-Aug,4.2,43.4
+Nevada,80,1366.6,13-Aug,9.5,130
+New Hampshire,81,741.8,13-Aug,5,37.1
+New Jersey,82,4599,13-Aug,8.5,392
+New Mexico,83,930.9,13-Aug,6.8,63.4
+New York,84,9614.2,13-Aug,7.6,729.3
+North Carolina,85,4684.3,13-Aug,8.7,409.2
+North Dakota,86,399.6,13-Aug,3,11.8
+Ohio,87,5732.6,13-Aug,7.3,419.2
+Oklahoma,88,1807.9,13-Aug,5.3,95.9
+Oregon,89,1921.3,13-Aug,8.1,155.1
+Pennsylvania,90,6512.4,13-Aug,7.7,501.2
+Rhode Island,91,552.2,13-Aug,9.1,50
+South Carolina,92,2161.3,13-Aug,8.1,175.3
+South Dakota,93,448.3,13-Aug,3.8,16.9
+Tennessee,94,3108,13-Aug,8.5,264.4
+Texas,95,12770.8,13-Aug,6.4,816.6
+Utah,96,1403.5,13-Aug,4.7,65.3
+Vermont,97,351.8,13-Aug,4.6,16.2
+Virginia,98,4216.7,13-Aug,5.8,242.5
+Washington,99,3482,13-Aug,7,242.8
+West Virginia,100,793.6,13-Aug,6.2,49.5
+Wisconsin,101,3071.2,13-Aug,6.7,205.6
+Wyoming,102,307.2,13-Aug,4.6,14
+Alabama,103,2144.7,13-Sep,6.4,136.7
+Alaska,104,364.2,13-Sep,6.5,23.5
+Arizona,105,3003.8,13-Sep,8.3,248.6
+Arkansas,106,1322.2,13-Sep,7.4,98.4
+California,107,18636.7,13-Sep,8.7,1629.7
+Colorado,108,2760.7,13-Sep,6.9,191.6
+Connecticut,109,1854.8,13-Sep,8,148.5
+Delaware,110,440.2,13-Sep,7,30.9
+District of Columbia,111,363.8,13-Sep,8.6,31.3
+Florida,112,9405.3,13-Sep,6.8,642.7
+Georgia,113,4785.6,13-Sep,8.3,396.9
+Hawaii,114,645.2,13-Sep,4.3,27.6
+Idaho,115,773.5,13-Sep,6.8,52.4
+Illinois,116,6527.1,13-Sep,9.1,592
+Indiana,117,3158.6,13-Sep,7.8,246.1
+Iowa,118,1659.1,13-Sep,4.7,78.7
+Kansas,119,1488.7,13-Sep,5.7,85.4
+Kentucky,120,2073.7,13-Sep,8.3,172.6
+Louisiana,121,2091.2,13-Sep,6.8,142
+Maine,122,711.5,13-Sep,6.9,49.4
+Maryland,123,3117.3,13-Sep,6.7,210.1
+Massachusetts,124,3494.1,13-Sep,7.1,249.1
+Michigan,125,4736.3,13-Sep,9,424.6
+Minnesota,126,2968.9,13-Sep,5,147.8
+Mississippi,127,1290.2,13-Sep,8.5,110.2
+Missouri,128,3017.5,13-Sep,6.9,208.1
+Montana,129,508.4,13-Sep,5.3,26.7
+Nebraska,130,1032,13-Sep,4.1,42.4
+Nevada,131,1364.1,13-Sep,9.4,127.7
+New Hampshire,132,742.2,13-Sep,5,36.9
+New Jersey,133,4587.4,13-Sep,8.4,387.5
+New Mexico,134,924.6,13-Sep,6.7,61.6
+New York,135,9641.8,13-Sep,7.6,734.6
+North Carolina,136,4678.2,13-Sep,8.3,390.3
+North Dakota,137,400.9,13-Sep,2.8,11.3
+Ohio,138,5733.4,13-Sep,7.4,424.6
+Oklahoma,139,1811.1,13-Sep,5.4,97.6
+Oregon,140,1922.5,13-Sep,7.8,150.5
+Pennsylvania,141,6502.7,13-Sep,7.6,496
+Rhode Island,142,551.4,13-Sep,9.2,50.5
+South Carolina,143,2161,13-Sep,7.9,170.1
+South Dakota,144,449.4,13-Sep,3.7,16.8
+Tennessee,145,3101.7,13-Sep,8.4,262
+Texas,146,12793.1,13-Sep,6.3,807.8
+Utah,147,1405.4,13-Sep,4.7,65.5
+Vermont,148,352.6,13-Sep,4.6,16.3
+Virginia,149,4223.1,13-Sep,5.6,238
+Washington,150,3478.7,13-Sep,6.9,241
+West Virginia,151,794.8,13-Sep,6.2,49.4
+Wisconsin,152,3071.7,13-Sep,6.6,202.4
+Wyoming,153,306.9,13-Sep,4.5,13.8
+Alabama,154,2131,13-Oct,6.5,138
+Alaska,155,365,13-Oct,6.5,23.9
+Arizona,156,2996.1,13-Oct,8.2,245.4
+Arkansas,157,1321.5,13-Oct,7.5,99.8
+California,158,18605.9,13-Oct,8.7,1611.9
+Colorado,159,2747.2,13-Oct,6.8,185.5
+Connecticut,160,1853.8,13-Oct,7.9,147.1
+Delaware,161,439.4,13-Oct,6.8,29.8
+District of Columbia,162,362.5,13-Oct,8.9,32.3
+Florida,163,9395.6,13-Oct,6.7,625.2
+Georgia,164,4761.1,13-Oct,8.1,384.3
+Hawaii,165,648.3,13-Oct,4.4,28.7
+Idaho,166,772.6,13-Oct,6.7,51.4
+Illinois,167,6519.1,13-Oct,8.9,579.4
+Indiana,168,3157.1,13-Oct,7.5,238
+Iowa,169,1659.2,13-Oct,4.6,75.9
+Kansas,170,1488,13-Oct,5.6,82.8
+Kentucky,171,2063.8,13-Oct,8.4,172.4
+Louisiana,172,2085.3,13-Oct,6.5,136.4
+Maine,173,709.9,13-Oct,6.7,47.3
+Maryland,174,3113.9,13-Oct,6.7,209
+Massachusetts,175,3487.6,13-Oct,7.2,249.8
+Michigan,176,4724.6,13-Oct,9,423.2
+Minnesota,177,2964.6,13-Oct,4.8,142.4
+Mississippi,178,1283.2,13-Oct,8.5,109
+Missouri,179,3012.5,13-Oct,6.5,195.5
+Montana,180,508.3,13-Oct,5.2,26.7
+Nebraska,181,1027.1,13-Oct,3.9,40.3
+Nevada,182,1362.3,13-Oct,9.3,127.2
+New Hampshire,183,741.7,13-Oct,5.1,37.8
+New Jersey,184,4562.3,13-Oct,8.4,382.2
+New Mexico,185,920.7,13-Oct,6.6,60.4
+New York,186,9655,13-Oct,7.7,740.3
+North Carolina,187,4665.9,13-Oct,8,371.8
+North Dakota,188,401.1,13-Oct,2.7,10.8
+Ohio,189,5727.3,13-Oct,7.5,426.9
+Oklahoma,190,1812.7,13-Oct,5.5,100.3
+Oregon,191,1918.7,13-Oct,7.7,147.4
+Pennsylvania,192,6471.4,13-Oct,7.5,484.8
+Rhode Island,193,550.7,13-Oct,9.2,50.4
+South Carolina,194,2157,13-Oct,7.5,162.6
+South Dakota,195,449.4,13-Oct,3.7,16.7
+Tennessee,196,3076.1,13-Oct,8.4,259.9
+Texas,197,12787.8,13-Oct,6.2,796.7
+Utah,198,1408.5,13-Oct,4.6,64.9
+Vermont,199,351.6,13-Oct,4.5,16
+Virginia,200,4222,13-Oct,5.6,237.8
+Washington,201,3470.6,13-Oct,7,241.3
+West Virginia,202,795.4,13-Oct,6.2,49.6
+Wisconsin,203,3064.7,13-Oct,6.5,198.5
+Wyoming,204,306.6,13-Oct,4.6,14
