@@ -74,7 +74,6 @@ div, span, p, td {
 	position:relative;
 	height:350px;
 	width: 240px;
-	overflow:scroll;
 }
 #legend .label {
 	color: #404040;
